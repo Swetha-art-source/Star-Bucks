@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e1a5206707.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="https://res.cloudinary.com/dusm4h6cn/image/upload/v1687692268/logo_sjqkzg.png" alt="Starbucks-Logo" class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </header>
+
+        <div class="content">
+            <div class="textbox">
+                <h2>It's not just Coffee <br>It's <span>StarBucks</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque amet distinctio iusto dolore modi
+                    voluptatem rerum ut, doloremque, dicta possimus deserunt quisquam qui minima assumenda sint magni
+                    soluta architecto similique.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div class="imgBox">
+
+                <img src="https://res.cloudinary.com/dusm4h6cn/image/upload/v1687692015/img1_evi98w.png" class="starbucks">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="https://res.cloudinary.com/dusm4h6cn/image/upload/v1687692290/thumb1_m3oppj.png" onclick="imgSlider('https://res.cloudinary.com/dusm4h6cn/image/upload/v1687692015/img1_evi98w.png');changeCircleColor('#017143')"></li>
+            <li><img src="https://res.cloudinary.com/dusm4h6cn/image/upload/v1687692313/thumb2_g82qly.png" onclick="imgSlider('https://res.cloudinary.com/dusm4h6cn/image/upload/v1687692210/img2_oxzo3q.png');changeCircleColor('#eb7495')"></li>
+            <li><img src="https://res.cloudinary.com/dusm4h6cn/image/upload/v1687692330/thumb3_ehoaee.png" onclick="imgSlider('https://res.cloudinary.com/dusm4h6cn/image/upload/v1687692248/img3_gtcosk.png');changeCircleColor('#d752b1')"></li>
+        </ul>
+
+        <ul class="icons">
+            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+        </ul>
+    </section>
+
+    <script type="text/javascript">
+        function imgSlider(anything) {
+            document.querySelector('.starbucks').src = anything;
+        }
+
+        function changeCircleColor(color) {
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+</body>
+
+</html>
